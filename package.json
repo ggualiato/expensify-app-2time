@@ -5,7 +5,8 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
     "server": "live-server public/",
     "dev-server": "webpack-dev-server",
     "test": "jest --passWithNoTests"
