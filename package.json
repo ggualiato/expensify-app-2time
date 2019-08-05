@@ -9,7 +9,9 @@
     "build:prod": "webpack -p --env production",
     "server": "live-server public/",
     "dev-server": "webpack-dev-server",
-    "test": "jest --passWithNoTests"
+    "test": "jest --passWithNoTests",
+    "start": "node server/server.js",
+    "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
     "@babel/core": "^7.5.5",
