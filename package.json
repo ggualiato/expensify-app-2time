@@ -7,8 +7,8 @@
   "scripts": {
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
-    "dev-server": "webpack-dev-server",
-    "test": "jest --passWithNoTests",
+    "dev-server": "webpack-dev-server --open",
+    "test": "jest --passWithNoTests --watchAll",
     "start": "node server/server.js",
     "heroku-postbuild": "yarn run build:prod"
   },
