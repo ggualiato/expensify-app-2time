@@ -12,6 +12,25 @@ const config = {
 
 firebase.initializeApp(config)
 
-firebase.database().ref().set({
-    name: 'Giovanni Gualiato'
+const database = firebase.database()
+
+database.ref().set({
+    name: 'Giovanni Gualiato',
+    age: 23,
+    isSingle: true,
+    location: {
+        city: 'Santo André',
+        country: 'Brasil'
+    }
 })
+
+// database.ref().set('This is my data.')
+
+database.ref('age').set(27)
+database.ref('location/city').set('São Paulo')
+
+database.ref('attributes').set({
+    height: 1.73,
+    weight: 75
+})
+// database.ref('attributes')
