@@ -1,4 +1,4 @@
-import * as firebase from 'firebase'
+import * as firebase from "firebase";
 
 const config = {
     apiKey: "AIzaSyBq5W1g2UJvw7C0rWGWizhUI0vhpo6BgH0",
@@ -7,14 +7,14 @@ const config = {
     projectId: "expensify-eb07c",
     storageBucket: "expensify-eb07c.appspot.com",
     messagingSenderId: "232347875300",
-    appId: "1:232347875300:web:f62cc7b74926abb45ff9f1"
-}
+    appId: "1:232347875300:web:f62cc7b74926abb45ff9f1",
+};
 
-firebase.initializeApp(config)
+firebase.initializeApp(config);
 
-const database = firebase.database()
+const database = firebase.database();
 
-export { firebase, database as default }
+export { firebase, database as default };
 
 // database.ref('expenses').push({
 //     description: 'Rent',
@@ -71,4 +71,3 @@ export { firebase, database as default }
 
 // database.ref().remove()
 // // database.ref('attributes')
-
